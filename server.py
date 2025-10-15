@@ -16,7 +16,7 @@ def chat():
                 "Content-Type": "application/json"
             },
             json=data,
-            timeout=60
+            timeout=30
         )
         return (resp.text, resp.status_code, {"Content-Type": "application/json"})
     except Exception as e:
